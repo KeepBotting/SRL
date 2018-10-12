@@ -7,16 +7,14 @@
       <Flags>
         <MainUnitHasCreateFormStatements Value="False"/>
         <MainUnitHasTitleStatement Value="False"/>
+        <MainUnitHasScaledStatement Value="False"/>
       </Flags>
       <SessionStorage Value="InProjectDir"/>
       <MainUnit Value="0"/>
-      <Title Value="slacktree"/>
+      <Title Value="libasyncmouse"/>
       <UseAppBundle Value="False"/>
       <ResourceType Value="res"/>
     </General>
-    <i18n>
-      <EnableI18N LFM="False"/>
-    </i18n>
     <BuildModes Count="2">
       <Item1 Name="32" Default="True"/>
       <Item2 Name="64">
@@ -24,7 +22,7 @@
           <Version Value="11"/>
           <PathDelim Value="\"/>
           <Target>
-            <Filename Value="slacktree64"/>
+            <Filename Value="libasyncmouse64"/>
           </Target>
           <SearchPaths>
             <IncludeFiles Value="$(ProjOutDir)"/>
@@ -32,13 +30,15 @@
           </SearchPaths>
           <CodeGeneration>
             <RelocatableUnit Value="True"/>
+            <TargetCPU Value="x86_64"/>
             <Optimizations>
               <OptimizationLevel Value="3"/>
-              <VariablesInRegisters Value="True"/>
-              <UncertainOptimizations Value="True"/>
             </Optimizations>
           </CodeGeneration>
           <Linking>
+            <Debugging>
+              <GenerateDebugInfo Value="False"/>
+            </Debugging>
             <Options>
               <ExecutableType Value="Library"/>
             </Options>
@@ -48,8 +48,6 @@
     </BuildModes>
     <PublishOptions>
       <Version Value="2"/>
-      <IncludeFileFilter Value="*.(pas|pp|inc|lfm|lpr|lrs|lpi|lpk|sh|xml)"/>
-      <ExcludeFileFilter Value="*.(bak|ppu|o|so);*~;backup"/>
     </PublishOptions>
     <RunParams>
       <local>
@@ -58,7 +56,7 @@
     </RunParams>
     <Units Count="1">
       <Unit0>
-        <Filename Value="slacktree.lpr"/>
+        <Filename Value="libasyncmouse.lpr"/>
         <IsPartOfProject Value="True"/>
       </Unit0>
     </Units>
@@ -67,7 +65,7 @@
     <Version Value="11"/>
     <PathDelim Value="\"/>
     <Target>
-      <Filename Value="slacktree32"/>
+      <Filename Value="libasyncmouse32"/>
     </Target>
     <SearchPaths>
       <IncludeFiles Value="$(ProjOutDir)"/>
@@ -78,11 +76,12 @@
       <TargetCPU Value="i386"/>
       <Optimizations>
         <OptimizationLevel Value="3"/>
-        <VariablesInRegisters Value="True"/>
-        <UncertainOptimizations Value="True"/>
       </Optimizations>
     </CodeGeneration>
     <Linking>
+      <Debugging>
+        <GenerateDebugInfo Value="False"/>
+      </Debugging>
       <Options>
         <ExecutableType Value="Library"/>
       </Options>
